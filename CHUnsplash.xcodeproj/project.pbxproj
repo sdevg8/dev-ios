@@ -1,0 +1,946 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE0107CC261E4DF400E59F25 /* PhotosViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0107CB261E4DF400E59F25 /* PhotosViewControllerTests.swift */; };
+		CE1B0443261D0D4800CCB6C5 /* CHTestsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1B0442261D0D4800CCB6C5 /* CHTestsHelper.swift */; };
+		CE1B0450261D12AF00CCB6C5 /* AlbumViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1B044F261D12AF00CCB6C5 /* AlbumViewControllerTests.swift */; };
+		CE1B0455261D19C400CCB6C5 /* CHStoryboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1B0454261D19C400CCB6C5 /* CHStoryboardHandler.swift */; };
+		CE3BB02A25FD520000FF9078 /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3BB02925FD520000FF9078 /* AlbumTableViewCell.swift */; };
+		CE3BB03D25FD5C6F00FF9078 /* AlbumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3BB03C25FD5C6F00FF9078 /* AlbumViewModel.swift */; };
+		CE3BB04225FD646200FF9078 /* CHAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3BB04125FD646200FF9078 /* CHAPIManager.swift */; };
+		CE3BB04A25FD895900FF9078 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3BB04925FD895900FF9078 /* PhotosViewController.swift */; };
+		CEBDFB4525FE3F0200069629 /* PhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBDFB4325FE3F0200069629 /* PhotosCollectionViewCell.swift */; };
+		CEBDFB4E25FE49D300069629 /* PhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBDFB4D25FE49D300069629 /* PhotosViewModel.swift */; };
+		CEBDFB5725FE736700069629 /* Cachable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBDFB5625FE736700069629 /* Cachable.swift */; };
+		CEEE467225FBFCA7003EACF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE467125FBFCA7003EACF4 /* AppDelegate.swift */; };
+		CEEE467425FBFCA7003EACF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE467325FBFCA7003EACF4 /* SceneDelegate.swift */; };
+		CEEE467625FBFCA7003EACF4 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE467525FBFCA7003EACF4 /* AlbumViewController.swift */; };
+		CEEE467925FBFCA7003EACF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEE467725FBFCA7003EACF4 /* Main.storyboard */; };
+		CEEE467B25FBFCA9003EACF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEE467A25FBFCA9003EACF4 /* Assets.xcassets */; };
+		CEEE467E25FBFCA9003EACF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEE467C25FBFCA9003EACF4 /* LaunchScreen.storyboard */; };
+		CEEE469425FBFCA9003EACF4 /* CHUnsplashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE469325FBFCA9003EACF4 /* CHUnsplashUITests.swift */; };
+		CEEE46AA25FC08CA003EACF4 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE46A925FC08CA003EACF4 /* Reachability.swift */; };
+		CEEE46DB25FC1824003EACF4 /* Albums.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE46C425FC1823003EACF4 /* Albums.swift */; };
+		CEEE46DC25FC1824003EACF4 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE46C525FC1823003EACF4 /* Photos.swift */; };
+		CEEE46DD25FC1824003EACF4 /* ParametersEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE46C825FC1823003EACF4 /* ParametersEncoding.swift */; };
+		CEEE46DE25FC1824003EACF4 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE46C925FC1823003EACF4 /* NetworkResponse.swift */; };
+		CEEE46DF25FC1824003EACF4 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE46CA25FC1823003EACF4 /* HTTPMethod.swift */; };
+		CEEE46E025FC1824003EACF4 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE46CB25FC1823003EACF4 /* Task.swift */; };
+		CEEE46E125FC1824003EACF4 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE46CC25FC1823003EACF4 /* NetworkError.swift */; };
+		CEEE46E225FC1824003EACF4 /* URLSessionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE46CE25FC1823003EACF4 /* URLSessionProvider.swift */; };
+		CEEE46E325FC1824003EACF4 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE46D025FC1823003EACF4 /* ServiceProtocol.swift */; };
+		CEEE46E425FC1824003EACF4 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE46D125FC1823003EACF4 /* URLSessionProtocol.swift */; };
+		CEEE46E525FC1824003EACF4 /* ProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE46D225FC1823003EACF4 /* ProviderProtocol.swift */; };
+		CEEE46E625FC1824003EACF4 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE46D425FC1823003EACF4 /* PostService.swift */; };
+		CEEE46F325FC1AF5003EACF4 /* URLComponentsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE46F125FC1AF5003EACF4 /* URLComponentsExtension.swift */; };
+		CEEE46F425FC1AF5003EACF4 /* URLRequestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE46F225FC1AF5003EACF4 /* URLRequestExtension.swift */; };
+		E9822E27760D53E293E5C2F6 /* Pods_CHUnsplashTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4253A74285748B5E59BD17AC /* Pods_CHUnsplashTests.framework */; };
+		F0F4F43A58DC81C3F23D1A83 /* Pods_CHUnsplash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EE8EA3D6DB5A6A8B65E4424 /* Pods_CHUnsplash.framework */; };
+		F631AA58EAAD1C825BD100F6 /* Pods_CHUnsplash_CHUnsplashUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B50585BBB1A416C1858924EA /* Pods_CHUnsplash_CHUnsplashUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEEE468525FBFCA9003EACF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEEE466625FBFCA7003EACF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEEE466D25FBFCA7003EACF4;
+			remoteInfo = CHUnsplash;
+		};
+		CEEE469025FBFCA9003EACF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEEE466625FBFCA7003EACF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEEE466D25FBFCA7003EACF4;
+			remoteInfo = CHUnsplash;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0EE8EA3D6DB5A6A8B65E4424 /* Pods_CHUnsplash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CHUnsplash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1965068C03DD99B49020D3EC /* Pods-CHUnsplash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHUnsplash.debug.xcconfig"; path = "Target Support Files/Pods-CHUnsplash/Pods-CHUnsplash.debug.xcconfig"; sourceTree = "<group>"; };
+		27257D406225853D83121B9D /* Pods-CHUnsplash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHUnsplash.release.xcconfig"; path = "Target Support Files/Pods-CHUnsplash/Pods-CHUnsplash.release.xcconfig"; sourceTree = "<group>"; };
+		3549C04B11AFFACC96C27BCD /* Pods-CHUnsplash-CHUnsplashUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHUnsplash-CHUnsplashUITests.release.xcconfig"; path = "Target Support Files/Pods-CHUnsplash-CHUnsplashUITests/Pods-CHUnsplash-CHUnsplashUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4253A74285748B5E59BD17AC /* Pods_CHUnsplashTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CHUnsplashTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DD1673239DC6FCA61378D0B /* Pods-CHUnsplashTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHUnsplashTests.release.xcconfig"; path = "Target Support Files/Pods-CHUnsplashTests/Pods-CHUnsplashTests.release.xcconfig"; sourceTree = "<group>"; };
+		9F373038CC0C0249606B09D6 /* Pods-CHUnsplash-CHUnsplashUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHUnsplash-CHUnsplashUITests.debug.xcconfig"; path = "Target Support Files/Pods-CHUnsplash-CHUnsplashUITests/Pods-CHUnsplash-CHUnsplashUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B50585BBB1A416C1858924EA /* Pods_CHUnsplash_CHUnsplashUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CHUnsplash_CHUnsplashUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0107CB261E4DF400E59F25 /* PhotosViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewControllerTests.swift; sourceTree = "<group>"; };
+		CE1B0442261D0D4800CCB6C5 /* CHTestsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHTestsHelper.swift; sourceTree = "<group>"; };
+		CE1B044F261D12AF00CCB6C5 /* AlbumViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewControllerTests.swift; sourceTree = "<group>"; };
+		CE1B0454261D19C400CCB6C5 /* CHStoryboardHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHStoryboardHandler.swift; sourceTree = "<group>"; };
+		CE3BB02925FD520000FF9078 /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
+		CE3BB03C25FD5C6F00FF9078 /* AlbumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewModel.swift; sourceTree = "<group>"; };
+		CE3BB04125FD646200FF9078 /* CHAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHAPIManager.swift; sourceTree = "<group>"; };
+		CE3BB04925FD895900FF9078 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		CEBDFB4325FE3F0200069629 /* PhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewCell.swift; sourceTree = "<group>"; };
+		CEBDFB4D25FE49D300069629 /* PhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewModel.swift; sourceTree = "<group>"; };
+		CEBDFB5625FE736700069629 /* Cachable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cachable.swift; sourceTree = "<group>"; };
+		CEEE466E25FBFCA7003EACF4 /* CHUnsplash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CHUnsplash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEE467125FBFCA7003EACF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEEE467325FBFCA7003EACF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CEEE467525FBFCA7003EACF4 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		CEEE467825FBFCA7003EACF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEEE467A25FBFCA9003EACF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEEE467D25FBFCA9003EACF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEEE467F25FBFCA9003EACF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEEE468425FBFCA9003EACF4 /* CHUnsplashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CHUnsplashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEE468A25FBFCA9003EACF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEEE468F25FBFCA9003EACF4 /* CHUnsplashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CHUnsplashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEE469325FBFCA9003EACF4 /* CHUnsplashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHUnsplashUITests.swift; sourceTree = "<group>"; };
+		CEEE469525FBFCA9003EACF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEEE46A925FC08CA003EACF4 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		CEEE46C425FC1823003EACF4 /* Albums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Albums.swift; sourceTree = "<group>"; };
+		CEEE46C525FC1823003EACF4 /* Photos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
+		CEEE46C825FC1823003EACF4 /* ParametersEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParametersEncoding.swift; sourceTree = "<group>"; };
+		CEEE46C925FC1823003EACF4 /* NetworkResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		CEEE46CA25FC1823003EACF4 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		CEEE46CB25FC1823003EACF4 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		CEEE46CC25FC1823003EACF4 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		CEEE46CE25FC1823003EACF4 /* URLSessionProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionProvider.swift; sourceTree = "<group>"; };
+		CEEE46D025FC1823003EACF4 /* ServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
+		CEEE46D125FC1823003EACF4 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		CEEE46D225FC1823003EACF4 /* ProviderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderProtocol.swift; sourceTree = "<group>"; };
+		CEEE46D425FC1823003EACF4 /* PostService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		CEEE46F125FC1AF5003EACF4 /* URLComponentsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLComponentsExtension.swift; sourceTree = "<group>"; };
+		CEEE46F225FC1AF5003EACF4 /* URLRequestExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequestExtension.swift; sourceTree = "<group>"; };
+		EAC8C2FE52BE9ADC685FF46C /* Pods-CHUnsplashTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHUnsplashTests.debug.xcconfig"; path = "Target Support Files/Pods-CHUnsplashTests/Pods-CHUnsplashTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEEE466B25FBFCA7003EACF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0F4F43A58DC81C3F23D1A83 /* Pods_CHUnsplash.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEE468125FBFCA9003EACF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9822E27760D53E293E5C2F6 /* Pods_CHUnsplashTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEE468C25FBFCA9003EACF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F631AA58EAAD1C825BD100F6 /* Pods_CHUnsplash_CHUnsplashUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7DE75C7EEFE434AFD24BED3E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1965068C03DD99B49020D3EC /* Pods-CHUnsplash.debug.xcconfig */,
+				27257D406225853D83121B9D /* Pods-CHUnsplash.release.xcconfig */,
+				9F373038CC0C0249606B09D6 /* Pods-CHUnsplash-CHUnsplashUITests.debug.xcconfig */,
+				3549C04B11AFFACC96C27BCD /* Pods-CHUnsplash-CHUnsplashUITests.release.xcconfig */,
+				EAC8C2FE52BE9ADC685FF46C /* Pods-CHUnsplashTests.debug.xcconfig */,
+				8DD1673239DC6FCA61378D0B /* Pods-CHUnsplashTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9D8CE0EBFB45E65F68C767E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EE8EA3D6DB5A6A8B65E4424 /* Pods_CHUnsplash.framework */,
+				B50585BBB1A416C1858924EA /* Pods_CHUnsplash_CHUnsplashUITests.framework */,
+				4253A74285748B5E59BD17AC /* Pods_CHUnsplashTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE1B0459261D19ED00CCB6C5 /* CommonClass */ = {
+			isa = PBXGroup;
+			children = (
+				CE1B0454261D19C400CCB6C5 /* CHStoryboardHandler.swift */,
+			);
+			path = CommonClass;
+			sourceTree = "<group>";
+		};
+		CE3BB02525FD51AC00FF9078 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE3BB02925FD520000FF9078 /* AlbumTableViewCell.swift */,
+				CEBDFB4325FE3F0200069629 /* PhotosCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE3BB02E25FD52F100FF9078 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CEEE467525FBFCA7003EACF4 /* AlbumViewController.swift */,
+				CE3BB04925FD895900FF9078 /* PhotosViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CE3BB03825FD5C1600FF9078 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE3BB03C25FD5C6F00FF9078 /* AlbumViewModel.swift */,
+				CEBDFB4D25FE49D300069629 /* PhotosViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CEBDFB5525FE733F00069629 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CEBDFB5625FE736700069629 /* Cachable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CEEE466525FBFCA7003EACF4 = {
+			isa = PBXGroup;
+			children = (
+				CEEE467025FBFCA7003EACF4 /* CHUnsplash */,
+				CEEE468725FBFCA9003EACF4 /* CHUnsplashTests */,
+				CEEE469225FBFCA9003EACF4 /* CHUnsplashUITests */,
+				CEEE466F25FBFCA7003EACF4 /* Products */,
+				7DE75C7EEFE434AFD24BED3E /* Pods */,
+				9D8CE0EBFB45E65F68C767E9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CEEE466F25FBFCA7003EACF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEEE466E25FBFCA7003EACF4 /* CHUnsplash.app */,
+				CEEE468425FBFCA9003EACF4 /* CHUnsplashTests.xctest */,
+				CEEE468F25FBFCA9003EACF4 /* CHUnsplashUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEEE467025FBFCA7003EACF4 /* CHUnsplash */ = {
+			isa = PBXGroup;
+			children = (
+				CEEE467125FBFCA7003EACF4 /* AppDelegate.swift */,
+				CEEE467325FBFCA7003EACF4 /* SceneDelegate.swift */,
+				CE3BB02E25FD52F100FF9078 /* Controller */,
+				CE3BB02525FD51AC00FF9078 /* Views */,
+				CE3BB03825FD5C1600FF9078 /* ViewModel */,
+				CEEE46C325FC1823003EACF4 /* Models */,
+				CEEE46F025FC1AF5003EACF4 /* Extensions */,
+				CEEE46C625FC1823003EACF4 /* Networking */,
+				CEBDFB5525FE733F00069629 /* Protocols */,
+				CE1B0459261D19ED00CCB6C5 /* CommonClass */,
+				CEEE467725FBFCA7003EACF4 /* Main.storyboard */,
+				CEEE467A25FBFCA9003EACF4 /* Assets.xcassets */,
+				CEEE467C25FBFCA9003EACF4 /* LaunchScreen.storyboard */,
+				CEEE467F25FBFCA9003EACF4 /* Info.plist */,
+			);
+			path = CHUnsplash;
+			sourceTree = "<group>";
+		};
+		CEEE468725FBFCA9003EACF4 /* CHUnsplashTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE1B0442261D0D4800CCB6C5 /* CHTestsHelper.swift */,
+				CE1B044F261D12AF00CCB6C5 /* AlbumViewControllerTests.swift */,
+				CE0107CB261E4DF400E59F25 /* PhotosViewControllerTests.swift */,
+				CEEE468A25FBFCA9003EACF4 /* Info.plist */,
+			);
+			path = CHUnsplashTests;
+			sourceTree = "<group>";
+		};
+		CEEE469225FBFCA9003EACF4 /* CHUnsplashUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEEE469325FBFCA9003EACF4 /* CHUnsplashUITests.swift */,
+				CEEE469525FBFCA9003EACF4 /* Info.plist */,
+			);
+			path = CHUnsplashUITests;
+			sourceTree = "<group>";
+		};
+		CEEE46C325FC1823003EACF4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEEE46C425FC1823003EACF4 /* Albums.swift */,
+				CEEE46C525FC1823003EACF4 /* Photos.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CEEE46C625FC1823003EACF4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CEEE46C725FC1823003EACF4 /* Enums */,
+				CEEE46CD25FC1823003EACF4 /* Provider */,
+				CEEE46CF25FC1823003EACF4 /* Protocols */,
+				CEEE46D325FC1823003EACF4 /* Services */,
+				CEEE46A925FC08CA003EACF4 /* Reachability.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CEEE46C725FC1823003EACF4 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				CEEE46C825FC1823003EACF4 /* ParametersEncoding.swift */,
+				CEEE46C925FC1823003EACF4 /* NetworkResponse.swift */,
+				CEEE46CA25FC1823003EACF4 /* HTTPMethod.swift */,
+				CEEE46CB25FC1823003EACF4 /* Task.swift */,
+				CEEE46CC25FC1823003EACF4 /* NetworkError.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		CEEE46CD25FC1823003EACF4 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				CEEE46CE25FC1823003EACF4 /* URLSessionProvider.swift */,
+				CE3BB04125FD646200FF9078 /* CHAPIManager.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		CEEE46CF25FC1823003EACF4 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CEEE46D025FC1823003EACF4 /* ServiceProtocol.swift */,
+				CEEE46D125FC1823003EACF4 /* URLSessionProtocol.swift */,
+				CEEE46D225FC1823003EACF4 /* ProviderProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CEEE46D325FC1823003EACF4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CEEE46D425FC1823003EACF4 /* PostService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CEEE46F025FC1AF5003EACF4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CEEE46F125FC1AF5003EACF4 /* URLComponentsExtension.swift */,
+				CEEE46F225FC1AF5003EACF4 /* URLRequestExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEEE466D25FBFCA7003EACF4 /* CHUnsplash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEE469825FBFCA9003EACF4 /* Build configuration list for PBXNativeTarget "CHUnsplash" */;
+			buildPhases = (
+				8AE95610EECF1D20651F0AE2 /* [CP] Check Pods Manifest.lock */,
+				CEEE466A25FBFCA7003EACF4 /* Sources */,
+				CEEE466B25FBFCA7003EACF4 /* Frameworks */,
+				CEEE466C25FBFCA7003EACF4 /* Resources */,
+				11C1B7C3EF5B40DFFB509E21 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CHUnsplash;
+			productName = CHUnsplash;
+			productReference = CEEE466E25FBFCA7003EACF4 /* CHUnsplash.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEEE468325FBFCA9003EACF4 /* CHUnsplashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEE469B25FBFCA9003EACF4 /* Build configuration list for PBXNativeTarget "CHUnsplashTests" */;
+			buildPhases = (
+				1AA97DA3A4D7038E0D5A066D /* [CP] Check Pods Manifest.lock */,
+				CEEE468025FBFCA9003EACF4 /* Sources */,
+				CEEE468125FBFCA9003EACF4 /* Frameworks */,
+				CEEE468225FBFCA9003EACF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEEE468625FBFCA9003EACF4 /* PBXTargetDependency */,
+			);
+			name = CHUnsplashTests;
+			productName = CHUnsplashTests;
+			productReference = CEEE468425FBFCA9003EACF4 /* CHUnsplashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEEE468E25FBFCA9003EACF4 /* CHUnsplashUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEE469E25FBFCA9003EACF4 /* Build configuration list for PBXNativeTarget "CHUnsplashUITests" */;
+			buildPhases = (
+				31E89A23E5A83F34BEB79489 /* [CP] Check Pods Manifest.lock */,
+				CEEE468B25FBFCA9003EACF4 /* Sources */,
+				CEEE468C25FBFCA9003EACF4 /* Frameworks */,
+				CEEE468D25FBFCA9003EACF4 /* Resources */,
+				2E649C0100D31D35F9878220 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEEE469125FBFCA9003EACF4 /* PBXTargetDependency */,
+			);
+			name = CHUnsplashUITests;
+			productName = CHUnsplashUITests;
+			productReference = CEEE468F25FBFCA9003EACF4 /* CHUnsplashUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEEE466625FBFCA7003EACF4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					CEEE466D25FBFCA7003EACF4 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					CEEE468325FBFCA9003EACF4 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = CEEE466D25FBFCA7003EACF4;
+					};
+					CEEE468E25FBFCA9003EACF4 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = CEEE466D25FBFCA7003EACF4;
+					};
+				};
+			};
+			buildConfigurationList = CEEE466925FBFCA7003EACF4 /* Build configuration list for PBXProject "CHUnsplash" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEEE466525FBFCA7003EACF4;
+			productRefGroup = CEEE466F25FBFCA7003EACF4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEEE466D25FBFCA7003EACF4 /* CHUnsplash */,
+				CEEE468325FBFCA9003EACF4 /* CHUnsplashTests */,
+				CEEE468E25FBFCA9003EACF4 /* CHUnsplashUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEEE466C25FBFCA7003EACF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEE467E25FBFCA9003EACF4 /* LaunchScreen.storyboard in Resources */,
+				CEEE467B25FBFCA9003EACF4 /* Assets.xcassets in Resources */,
+				CEEE467925FBFCA7003EACF4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEE468225FBFCA9003EACF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEE468D25FBFCA9003EACF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11C1B7C3EF5B40DFFB509E21 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CHUnsplash/Pods-CHUnsplash-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CHUnsplash/Pods-CHUnsplash-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CHUnsplash/Pods-CHUnsplash-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1AA97DA3A4D7038E0D5A066D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CHUnsplashTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E649C0100D31D35F9878220 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CHUnsplash-CHUnsplashUITests/Pods-CHUnsplash-CHUnsplashUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CHUnsplash-CHUnsplashUITests/Pods-CHUnsplash-CHUnsplashUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CHUnsplash-CHUnsplashUITests/Pods-CHUnsplash-CHUnsplashUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31E89A23E5A83F34BEB79489 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CHUnsplash-CHUnsplashUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AE95610EECF1D20651F0AE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CHUnsplash-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEEE466A25FBFCA7003EACF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEE46E425FC1824003EACF4 /* URLSessionProtocol.swift in Sources */,
+				CE3BB04A25FD895900FF9078 /* PhotosViewController.swift in Sources */,
+				CEBDFB5725FE736700069629 /* Cachable.swift in Sources */,
+				CEEE46DB25FC1824003EACF4 /* Albums.swift in Sources */,
+				CEEE46DE25FC1824003EACF4 /* NetworkResponse.swift in Sources */,
+				CEEE46E625FC1824003EACF4 /* PostService.swift in Sources */,
+				CEEE46E025FC1824003EACF4 /* Task.swift in Sources */,
+				CEEE467625FBFCA7003EACF4 /* AlbumViewController.swift in Sources */,
+				CE1B0455261D19C400CCB6C5 /* CHStoryboardHandler.swift in Sources */,
+				CEEE46DD25FC1824003EACF4 /* ParametersEncoding.swift in Sources */,
+				CEBDFB4525FE3F0200069629 /* PhotosCollectionViewCell.swift in Sources */,
+				CEBDFB4E25FE49D300069629 /* PhotosViewModel.swift in Sources */,
+				CEEE467225FBFCA7003EACF4 /* AppDelegate.swift in Sources */,
+				CE3BB03D25FD5C6F00FF9078 /* AlbumViewModel.swift in Sources */,
+				CEEE46E325FC1824003EACF4 /* ServiceProtocol.swift in Sources */,
+				CEEE46F425FC1AF5003EACF4 /* URLRequestExtension.swift in Sources */,
+				CEEE46DF25FC1824003EACF4 /* HTTPMethod.swift in Sources */,
+				CE3BB02A25FD520000FF9078 /* AlbumTableViewCell.swift in Sources */,
+				CEEE46DC25FC1824003EACF4 /* Photos.swift in Sources */,
+				CEEE46AA25FC08CA003EACF4 /* Reachability.swift in Sources */,
+				CE3BB04225FD646200FF9078 /* CHAPIManager.swift in Sources */,
+				CEEE46E525FC1824003EACF4 /* ProviderProtocol.swift in Sources */,
+				CEEE46E225FC1824003EACF4 /* URLSessionProvider.swift in Sources */,
+				CEEE46F325FC1AF5003EACF4 /* URLComponentsExtension.swift in Sources */,
+				CEEE46E125FC1824003EACF4 /* NetworkError.swift in Sources */,
+				CEEE467425FBFCA7003EACF4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEE468025FBFCA9003EACF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE1B0443261D0D4800CCB6C5 /* CHTestsHelper.swift in Sources */,
+				CE0107CC261E4DF400E59F25 /* PhotosViewControllerTests.swift in Sources */,
+				CE1B0450261D12AF00CCB6C5 /* AlbumViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEE468B25FBFCA9003EACF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEE469425FBFCA9003EACF4 /* CHUnsplashUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEEE468625FBFCA9003EACF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEEE466D25FBFCA7003EACF4 /* CHUnsplash */;
+			targetProxy = CEEE468525FBFCA9003EACF4 /* PBXContainerItemProxy */;
+		};
+		CEEE469125FBFCA9003EACF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEEE466D25FBFCA7003EACF4 /* CHUnsplash */;
+			targetProxy = CEEE469025FBFCA9003EACF4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEEE467725FBFCA7003EACF4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEEE467825FBFCA7003EACF4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEEE467C25FBFCA9003EACF4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEEE467D25FBFCA9003EACF4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEEE469625FBFCA9003EACF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEEE469725FBFCA9003EACF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEEE469925FBFCA9003EACF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1965068C03DD99B49020D3EC /* Pods-CHUnsplash.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				INFOPLIST_FILE = CHUnsplash/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.CHUnsplash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEEE469A25FBFCA9003EACF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27257D406225853D83121B9D /* Pods-CHUnsplash.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				INFOPLIST_FILE = CHUnsplash/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.CHUnsplash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CEEE469C25FBFCA9003EACF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAC8C2FE52BE9ADC685FF46C /* Pods-CHUnsplashTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CHUnsplashTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.CHUnsplashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CHUnsplash.app/CHUnsplash";
+			};
+			name = Debug;
+		};
+		CEEE469D25FBFCA9003EACF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DD1673239DC6FCA61378D0B /* Pods-CHUnsplashTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CHUnsplashTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.CHUnsplashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CHUnsplash.app/CHUnsplash";
+			};
+			name = Release;
+		};
+		CEEE469F25FBFCA9003EACF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F373038CC0C0249606B09D6 /* Pods-CHUnsplash-CHUnsplashUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CHUnsplashUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.CHUnsplashUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CHUnsplash;
+			};
+			name = Debug;
+		};
+		CEEE46A025FBFCA9003EACF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3549C04B11AFFACC96C27BCD /* Pods-CHUnsplash-CHUnsplashUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CHUnsplashUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.CHUnsplashUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CHUnsplash;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEEE466925FBFCA7003EACF4 /* Build configuration list for PBXProject "CHUnsplash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEE469625FBFCA9003EACF4 /* Debug */,
+				CEEE469725FBFCA9003EACF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEE469825FBFCA9003EACF4 /* Build configuration list for PBXNativeTarget "CHUnsplash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEE469925FBFCA9003EACF4 /* Debug */,
+				CEEE469A25FBFCA9003EACF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEE469B25FBFCA9003EACF4 /* Build configuration list for PBXNativeTarget "CHUnsplashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEE469C25FBFCA9003EACF4 /* Debug */,
+				CEEE469D25FBFCA9003EACF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEE469E25FBFCA9003EACF4 /* Build configuration list for PBXNativeTarget "CHUnsplashUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEE469F25FBFCA9003EACF4 /* Debug */,
+				CEEE46A025FBFCA9003EACF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEEE466625FBFCA7003EACF4 /* Project object */;
+}
